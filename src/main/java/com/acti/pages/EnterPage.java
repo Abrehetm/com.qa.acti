@@ -1,5 +1,7 @@
 package com.acti.pages;
 
+import org.openqa.selenium.support.PageFactory;
+
 import com.acti.base.DriverScript;
 
 /*
@@ -11,5 +13,16 @@ import com.acti.base.DriverScript;
  */
 
 public class EnterPage extends DriverScript{
+	
+//***************************page Locators***************************//
 
+//***************************page Initialization********************//
+	
+	public EnterPage()
+	{
+		PageFactory.initElements(driver, this);
+	}
+	
+	
+//***************************page Methods**************************//
 }
